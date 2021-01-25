@@ -1,0 +1,41 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  box-shadow: 1px 10px 13px -6px rgba(26,28,32,0.82);
+  -webkit-box-shadow: 1px 10px 13px -6px rgba(26,28,32,0.82);
+  -moz-box-shadow: 1px 10px 13px -6px rgba(26,28,32,0.82);
+  font-family: "Raleway";
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+
+  color: #f4f4f4;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #f0a500;
+
+  color: #f4f4f4;
+}
+
+li a:hover {
+  background-color: #f4f4f4;
+  color: #f0a500;
+}

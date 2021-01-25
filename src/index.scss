@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+$baseColor: #398B93;
+:root {
+  --color-primary: #{$baseColor};
+}
+body {
+  background-color: #111;
+}
+.app{
+  min-height: 768px;
+}
