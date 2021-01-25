@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/porftolio/static/css/main.4b8c783b.chunk.css",
+    "main.js": "/porftolio/static/js/main.2d636799.chunk.js",
+    "main.js.map": "/porftolio/static/js/main.2d636799.chunk.js.map",
+    "runtime-main.js": "/porftolio/static/js/runtime-main.67dd8996.js",
+    "runtime-main.js.map": "/porftolio/static/js/runtime-main.67dd8996.js.map",
+    "static/js/2.43f4586a.chunk.js": "/porftolio/static/js/2.43f4586a.chunk.js",
+    "static/js/2.43f4586a.chunk.js.map": "/porftolio/static/js/2.43f4586a.chunk.js.map",
+    "static/js/3.1ebb010b.chunk.js": "/porftolio/static/js/3.1ebb010b.chunk.js",
+    "static/js/3.1ebb010b.chunk.js.map": "/porftolio/static/js/3.1ebb010b.chunk.js.map",
+    "index.html": "/porftolio/index.html",
+    "static/css/main.4b8c783b.chunk.css.map": "/porftolio/static/css/main.4b8c783b.chunk.css.map",
+    "static/js/2.43f4586a.chunk.js.LICENSE.txt": "/porftolio/static/js/2.43f4586a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67dd8996.js",
+    "static/js/2.43f4586a.chunk.js",
+    "static/css/main.4b8c783b.chunk.css",
+    "static/js/main.2d636799.chunk.js"
+  ]
+}
