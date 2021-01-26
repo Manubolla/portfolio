@@ -1,6 +1,6 @@
 {
-  "name": "porftolio",
-  "homepage": "https://manubolla.github.io/porftolio/",
+  "name": "portfolio",
+  "homepage": "https://manubolla.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
