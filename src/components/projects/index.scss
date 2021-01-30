@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
 .arrowTop {
   text-align: -webkit-center;
   padding: 2rem;
@@ -30,8 +32,35 @@
         color: #1a1c20;
         display: block;
         transition: 0.25s ease;
+        .cardLogo {
+          width: 100%;
+          max-height: 8rem;
+          margin: 0;
+        }
         .descriptionContainer {
-          padding: 20px;
+          padding: 5px;
+
+          .icons {
+            display: flex;
+            justify-content: space-evenly;
+          }
+          .icons i {
+            color: #999;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 1.7em;
+          }
+          .icons i:hover {
+            color: #555;
+          }
+          .icons i a {
+            text-decoration: none;
+          }
+
+          p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* font-weight: bold; */
+          }
         }
       }
       &:hover {

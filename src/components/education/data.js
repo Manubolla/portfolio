@@ -7,10 +7,10 @@ export const data =[
         description: 'I worked with SCRUM methodoliges, Data Structures, Algorithms, JavaScript (ES6), CSS, Sass, Less, React, Redux, NodeJs, Express, SQL, Sequelize, Passport.'
     },
     {
-        school: 'Universidad Nacional de Luján',
-        degree: 'Profesor Universitario en Educación Física',
+        school: 'National University of Luján',
+        degree: 'University professor of physical education',
         startYear: '2014',
         endYear: '2020',
-        description: 'This carreer gave me lot of experience working with people,teach me how to be pacient and inspire others to achieve their goals.'
+        description: 'This career gave me lot of experience working with people, taught me how to be pacient and inspire others to achieve their goals.'
     },
 ]

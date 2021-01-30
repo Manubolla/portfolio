@@ -1,13 +1,13 @@
 export const projects = [
     { 
         id: 1,
-        name: 'Pozo',
-        description: 'Game developed with react',
+        name: 'Almazen',
+        description: 'First real project with a group of 7 members. We made a e-commerce of healthy products',
         socials: {
-            github: "",
-            deployedWeb: ''
+            github: "https://github.com/Manubolla/ecommerce-ft07-g12",
+            deployedWeb: 'https://almazenhenry-51bf6.web.app/'
         },
-        logo: 'https://www.bytelion.com/wp-content/uploads/2016/09/full_stack.png'
+        logo: 'https://i.ibb.co/8zRy23w/pexels-snapwire-349730.jpg'
     },
     { 
         id: 1,
