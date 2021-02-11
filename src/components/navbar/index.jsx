@@ -26,41 +26,37 @@ const Navbar = () => {
             [path]: 'active'
         }
     });
-    /*   ...state,
-        [path]: 'active'
-
-    }) */
   }, [location]);
   return (
     <div>
       <ul>
         <li>
-          <Link className={state.home ? "active" : ""} to="/">
+          <Link className={state.home ? "active" : ""} to={{pathname: "/",  xY:'y', coord: -500}}> 
             {" "}
             Home
           </Link>
         </li>
 
         <li>
-          <Link className={state.projects ? "active" : ""} to="/projects">
+          <Link className={state.projects ? "active" : ""}  to={{pathname: "/projects",  xY:'y', coord: -500}}>
             Projects
           </Link>
         </li>
 
         <li>
-          <Link className={state.education ? "active" : ""} to="/education">
+          <Link className={state.education ? "active" : ""}  to={{pathname: "/education",  xY:'y', coord: -500}}>
             Education
           </Link>
         </li>
 
         <li>
-          <Link className={state.experience ? "active" : ""} to="/experience">
+          <Link className={state.experience ? "active" : ""}  to={{pathname: "/experience",  xY:'y', coord: -500}}>
             Work experience
           </Link>
         </li>
 
         <li>
-          <Link className={state.contact ? "active" : ""} to="/contact">
+          <Link className={state.contact ? "active" : ""} to={{pathname: "/contact",  xY:'y', coord: -500}}>
             Contact me
           </Link>
         </li>

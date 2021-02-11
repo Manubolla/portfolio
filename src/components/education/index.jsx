@@ -3,11 +3,11 @@ import "./index.scss";
 import { motion } from "framer-motion";
 import Arrow from "../arrow";
 import { data } from "./data.js";
-const Education = () => {
+const Education = (props) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 500 }}
-      animate={{ opacity: 1, x: "0%" }}
+      initial={{ opacity: 0, [props.location.xY]: [props.location.coord]}}
+      animate={{ opacity: 1, [props.location.xY]: "0%" }}
       exit={{ opacity: 0 }}
     >
       <div className='main-education-container'>
@@ -33,7 +33,7 @@ const Education = () => {
           </ul>
       </div>
         <div className="arrowRight">
-          <Arrow points="right" to="/projects" />
+          <Arrow points="right" to="/projects" xY='x' coord={-500}/>
           <h3 style={{ color: "white" }}>Projects</h3>
         </div>
       </div>

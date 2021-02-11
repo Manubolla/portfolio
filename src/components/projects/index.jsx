@@ -4,15 +4,17 @@ import "./index.scss";
 import { projects } from "./database";
 import Arrow from "../arrow";
 
-const Projects = () => {
+
+const Projects = (props) => {
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: -500 }}
-      animate={{ opacity: 1, y: "0%" }}
+      initial={{ opacity: 0, [props.location.xY]: [props.location.coord] }}
+      animate={{ opacity: 1, [props.location.xY]: "0%" }}
       exit={{ opacity: 0 }}
     >
       <div className="arrowTop">
-        <Arrow points="up" to="/" />
+        <Arrow points="up" to="/" from='projects' xY='y' coord={500}/>
         <h3 style={{ color: "white" }}>Home</h3>
       </div>
       <div className="mainContent">
@@ -23,7 +25,7 @@ const Projects = () => {
             justifyContent: "center",
           }}
         >
-          <Arrow points="left" mainDiv={{ padding: 15 }} to="education" />
+          <Arrow points="left" mainDiv={{ padding: 15 }} to="education" xY='x' coord={500}/>
           <h3 style={{ color: "white" }}>Education</h3>
         </div>
         <div className="cardContainer">
@@ -46,16 +48,16 @@ const Projects = () => {
                           <i className="ion-social-github"></i>
                         </a>
                         </div>
-                        <div className="tooltip">
+                        {project.socials.deployedWeb ? <div className="tooltip">
                           <span className="tooltiptext">Watch my code in action!</span>
-                        <a
+                       <a
                           href={project.socials.deployedWeb ? project.socials.deployedWeb : ""}
                           rel="noreferrer noopener"
                           target="_blank"
                         >
                           <i className="ion-ios-glasses"></i>
                         </a>
-                        </div>
+                        </div> : null}
                       </div>
                       <p>{project.description}</p>
                     </div>
@@ -72,12 +74,12 @@ const Projects = () => {
           }}
         >
           <h3 style={{ color: "white" }}>Experience</h3>
-          <Arrow points="right" mainDiv={{ padding: 15 }} to="experience" />
+          <Arrow points="right" mainDiv={{ padding: 15 }} to="experience" xY='x' coord={-500}/>
         </div>
       </div>
       <div className="arrowBottom">
         <h3 style={{ color: "white" }}>Contact</h3>
-        <Arrow points="down" to="contact" />
+        <Arrow points="down" to="contact" xY='y' coord={-500}/>
       </div>
     </motion.div>
   );

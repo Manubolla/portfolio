@@ -10,17 +10,17 @@ export const projects = [
         logo: 'https://i.ibb.co/8zRy23w/pexels-snapwire-349730.jpg'
     },
     { 
-        id: 1,
-        name: 'Pozo',
-        description: 'Game developed with react',
+        id: 2,
+        name: 'PetBuddies',
+        description: 'React-native App that contact pet-owners and pet-workers',
         socials: {
-            github: "",
+            github: "https://github.com/Manubolla/PetBuddies",
             deployedWeb: ''
         },
-        logo: 'https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1484049536/content-items/001/822/416/logo_bueno-original.jpg?1484049536'
+        logo: 'https://i.ibb.co/17Q30j3/Pet-Buddies.jpg'
     },
     { 
-        id: 1,
+        id: 3,
         name: 'Pozo',
         description: 'Game developed with react',
         socials: {

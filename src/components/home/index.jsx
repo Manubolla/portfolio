@@ -3,11 +3,11 @@ import Arrow from "../arrow";
 import styles from "./index.module.scss";
 import { motion } from "framer-motion";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -500}}
-      animate={{ opacity: 1, y: '0%'}}
+      initial={{ opacity: 0, [props.location.xY]: [props.location.coord]}}
+      animate={{ opacity: 1, [props.location.xY]: '0%'}}
       exit={{ opacity: 0 }}
       className={styles.homeContainer}
     >
@@ -49,7 +49,7 @@ const Home = () => {
       </div>
       <div className={styles.arrowContainer}>
       <h3 className={`${styles.animated} ${styles.bounce}`} style={{ color: "white", marginBottom: 30}}>Follow me!</h3>
-        <Arrow points="down" to="projects" />
+        <Arrow points="down" to="projects" xY='y' coord={-500}/>
       </div>
     </motion.div>
   );

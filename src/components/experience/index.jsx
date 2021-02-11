@@ -4,16 +4,18 @@ import "./index.scss";
 import { motion } from "framer-motion";
 import { data } from "./data.js";
 
-const Experience = () => {
+
+
+const Experience = (props) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -500 }}
-      animate={{ opacity: 1, x: "0%" }}
+      initial={{ opacity: 0, [props.location.xY]: [props.location.coord] }}
+      animate={{ opacity: 1, [props.location.xY]: "0%" }}
       exit={{ opacity: 0 }}
     >
       <div className="main-experience-container">
         <div className="arrowLeft">
-          <Arrow points="left" to="/projects" />
+          <Arrow points="left" to="/projects" xY='x' coord={500} />
           <h3 style={{ color: "white" }}>Projects</h3>
         </div>
         <div className="experience-container">
