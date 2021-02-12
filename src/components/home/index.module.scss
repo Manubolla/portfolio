@@ -7,6 +7,9 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 3rem;
+  @media screen and (max-width: 715px) {
+    margin-top: 5rem;
+  }
 }
 .textContainer {
   align-self: center;
@@ -17,6 +20,11 @@
   line-height: 0.4em;
   font-family: "Raleway";
   color: white;
+  @media screen and (max-width: 715px) {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1em;
+  }
 }
 .textAnimation {
   margin-left: 4px;
@@ -52,6 +60,11 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   border-radius: 2rem;
   transition: all 0.3s ease-out;
+  @media screen and (max-width: 715px) {
+    min-width: 150px;
+    min-height: 100px;
+    margin: 0;
+  }
 }
 .profile:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
@@ -62,6 +75,10 @@
   width: 100px;
   height: 100px;
   border-radius: 10rem;
+  @media screen and (max-width: 715px) { 
+    width: 75px;
+    height: 75px;
+  }
 }
 h3 {
   font-family: "Oswald";
@@ -70,6 +87,10 @@ h3 {
   font-weight: 400;
   line-height: 24px;
   margin: 3px 0;
+  @media screen and (max-width: 715px) {
+    font-size: 15px;
+    margin: 0;
+  }
 }
 h5 {
   font-weight: 400;
@@ -77,9 +98,15 @@ h5 {
   text-transform: uppercase;
   color: #888;
   letter-spacing: 1px;
+  @media screen and (max-width: 715px) {
+    font-size: 12px;
+  }
 }
 .description {
   padding: 25px;
+  @media screen and (max-width: 715px) {
+    padding: 0;
+  }
 }
 .icons {
   display: flex;
@@ -90,6 +117,9 @@ h5 {
   display: inline-block;
   margin-right: 5px;
   font-size: 1.7em;
+  @media screen and (max-width: 715px) {
+    margin-bottom: 5px;
+  }
 }
 .icons i:hover {
   color: #555;

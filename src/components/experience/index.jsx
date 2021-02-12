@@ -3,10 +3,14 @@ import Arrow from "../arrow";
 import "./index.scss";
 import { motion } from "framer-motion";
 import { data } from "./data.js";
-
+import { useKey } from "../customHooks/indxex";
+import {useHistory} from 'react-router-dom'
 
 
 const Experience = (props) => {
+
+  const history = useHistory();
+  useKey('ArrowLeft', () => history.push({pathname: '/projects', xY: 'x', coord: 500}))
   return (
     <motion.div
       initial={{ opacity: 0, [props.location.xY]: [props.location.coord] }}

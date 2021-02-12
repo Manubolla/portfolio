@@ -90,6 +90,10 @@ textarea:hover::focus:-ms-placeholder {
   position: relative;
   width: 500px;
   margin: 50px auto 100px auto;
+  @media screen and (max-width: 715px) {
+    text-align: -webkit-center;
+    width: 300px;
+  }
 }
 
 input {
@@ -110,6 +114,10 @@ input {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 715px) {
+    width: 250px;
+    display: block;
+  }
 }
 
 input:hover {
@@ -137,6 +145,9 @@ textarea {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 715px) {
+    width: 250px;
+  }
 }
 
 textarea:hover {
@@ -146,19 +157,18 @@ textarea:hover {
 
 #submit {
   width: 502px;
-
   padding: 0;
   margin: -5px 0px 0px 0px;
-
   font-family: "Raleway", "Lato", sans-serif;
   font-size: 0.875em;
   color: #f4f4f4;
-
   outline: none;
   cursor: pointer;
-
   border: solid 1px #cf7500;
   border-top: none;
+  @media screen and (max-width: 715px) {
+    width: 282px;
+  }
 }
 
 #submit:hover {

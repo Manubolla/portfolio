@@ -4,30 +4,50 @@
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+    @media screen and (max-width: 715px) {
+      margin-top: 2rem;
+    }
     .arrowLeft{
         margin-left: 5rem;
         text-align: -webkit-center;
+        @media screen and (max-width: 715px) {
+          margin-left: 2rem;
+          h3 {
+            font-size: 12px;
+          }
+        }
     }
   }
   .experience-container {
-    /* overflow-y: scroll;
-    overflow-x: hidden; */
     margin-top: 3rem;
     max-width: 768px;
     max-height: 768px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: 715px) {
+      min-width: 300px;
+      margin-left: 1rem;
+      margin-right: 1.5rem;
+    }
   }
   .experience-table {
     display: flex;
     flex-direction: column;
     margin: 2rem;
+    @media screen and (max-width: 715px) {
+      margin: 0;
+      
+    }
     li {
       border-radius: 3px;
       padding: 25px 30px;
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
+      @media screen and (max-width: 715px) {
+        padding: 0;
+        margin: 2px;
+      }
     }
     .table-header {
       background-color: #f8dc81;
@@ -35,12 +55,20 @@
       text-transform: uppercase;
       letter-spacing: 0.03em;
       text-align: center;
+      font-weight: bold;
+      @media screen and (max-width: 715px) {
+        font-size: 12px;
+        padding: 1rem;
+      }
     }
     .table-row {
       background-color: #f8f1f1;
       box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
       align-items: center;
       text-align: center;
+      @media screen and (max-width: 715px) {
+        font-size: 14px;
+      }
     }
     .table-row:hover{
       background-color: #374045;

@@ -4,29 +4,48 @@
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
+  @media screen and (max-width: 715px) {
+    margin-top: 5rem;
+  }
   .arrowRight {
     margin-right: 5rem;
+    @media screen and (max-width: 715px) {
+      margin-right: 3rem;
+      h3 {
+        font-size: 12px;
+      }
+    }
   }
 }
 .education-container {
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
   margin-top: 3rem;
   max-width: 768px;
   max-height: 768px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 715px) {
+    min-width: 300px;
+    margin-left: 8rem;
+    margin-right: 1rem;
+  }
 }
 .education-table {
   display: flex;
   flex-direction: column;
   margin: 2rem;
+  @media screen and (max-width: 715px) {
+    margin: 0;
+  }
   li {
     border-radius: 3px;
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    @media screen and (max-width: 715px) {
+      padding: 0;
+      margin: 2px;
+    }
   }
   .table-header {
     background-color: #f8dc81;
@@ -34,6 +53,10 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-align: center;
+    @media screen and (max-width: 715px) {
+      font-size: 12px;
+      padding: 1rem;
+    }
   }
   .table-row {
     background-color: #f8f1f1;
@@ -44,13 +67,15 @@
     transition: 0.2s all;
     transition: 0.2s all;
     text-align: center;
+    @media screen and (max-width: 715px) {
+      font-size: 14px;
+    }
   }
   &:hover .table-row {
     filter: blur(3px);
     opacity: 0.5;
     transform: scale(0.98);
     box-shadow: none;
-    
   }
   &:hover .table-row:hover {
     transform: scale(1);
@@ -70,6 +95,5 @@
   }
   .col-4 {
     flex-basis: 50%;
-    
   }
 }

@@ -19,6 +19,7 @@
     height: 50vh;
     align-items: center;
     transition: 0.25s ease;
+
     .cardBackground {
       background-color: #1a1c20;
       height: 17rem;
@@ -39,7 +40,9 @@
         }
         .descriptionContainer {
           padding: 5px;
-
+          @media screen and (max-width: 715px) {
+            padding: 0;
+          }
           .icons {
             display: flex;
             justify-content: space-evenly;
@@ -66,7 +69,7 @@
       &:hover {
         border: 2px solid #cf7500;
         .projectContainer:hover {
-          transform: translate( 0px, -30px);
+          transform: translate(0px, -30px);
         }
       }
     }

@@ -3,9 +3,17 @@ import { motion } from "framer-motion";
 import "./index.scss";
 import { projects } from "./database";
 import Arrow from "../arrow";
+import {useHistory} from 'react-router-dom'
+import { useKey } from "../customHooks/indxex";
 
 
 const Projects = (props) => {
+
+  const history = useHistory();
+  useKey('ArrowUp', ()=> history.push({pathname: '/', xY:'y', coord: 500}))
+  useKey('ArrowLeft', ()=> history.push({pathname: '/education', xY:'x', coord: -500}))
+  useKey('ArrowRight', ()=> history.push({pathname: '/experience', xY:'x', coord: 500}))
+  useKey('ArrowDown', ()=> history.push({pathname: '/contact', xY:'y', coord: -500}))
 
   return (
     <motion.div

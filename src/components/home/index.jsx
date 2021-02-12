@@ -2,8 +2,16 @@ import React from "react";
 import Arrow from "../arrow";
 import styles from "./index.module.scss";
 import { motion } from "framer-motion";
+import { useKey } from "../customHooks/indxex";
+import {useHistory} from 'react-router-dom'
 
 const Home = (props) => {
+  const history = useHistory()
+  
+  function handleEnter() {
+   history.push({pathname:'/projects', xY:'y', coord:-500})
+  }
+  useKey('ArrowDown', handleEnter);
   return (
     <motion.div
       initial={{ opacity: 0, [props.location.xY]: [props.location.coord]}}

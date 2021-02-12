@@ -3,8 +3,13 @@ import "./index.scss";
 import { motion } from "framer-motion";
 import Arrow from "../arrow";
 import emailjs from 'emailjs-com';
+import { useHistory } from "react-router-dom";
+import { useKey } from "../customHooks/indxex";
 
 const Contact = (props) => {
+
+  const history = useHistory();
+  useKey('ArrowUp', () => history.push({pathname: '/projects', xY: 'y', coord: 500}))
 
     const [state, setState] = React.useState()
     const handleChange = (e) => {
