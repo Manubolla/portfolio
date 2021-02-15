@@ -8,7 +8,6 @@ export function useKey(key, cb) {
 
     React.useEffect(()=> {
         function handle(event) {
-            console.log(event.code)
             if(event.code === key) {
                 callbackRef.current(event);
             }

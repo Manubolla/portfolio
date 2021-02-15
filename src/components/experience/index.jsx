@@ -25,19 +25,19 @@ const Experience = (props) => {
         <div className="experience-container">
           <ul className="experience-table">
             <li className="table-header">
-              <div className="col col-1">Title</div>
-              <div className="col col-2">Company</div>
-              <div className="col col-3">Year</div>
-              <div className="col col-4">Description</div>
+              <div className="columna columna-1">Title</div>
+              <div className="columna columna-2">Company</div>
+              <div className="columna col-3">Year</div>
+              <div className="columna columna-4">Description</div>
             </li>
             {data &&
               data.map((item) => {
                 return (
                   <li className={`table-row row-${item.id}`}>
-                    <div className="col col-1">{item.title}</div>
-                    <div className="col col-2">{`${item.company} ${item.type}`}</div>
-                    <div className="col col-3">{`${item.year}`}</div>
-                    <div className="col col-4">{item.description}</div>
+                    <div className="columna columna-1">{item.title}</div>
+                    <div className="columna columna-2">{`${item.company} ${item.type}`}</div>
+                    <div className="columna columna-3">{`${item.year}`}</div>
+                    <div className="columna columna-4">{item.description}</div>
                   </li>
                 );
               })}

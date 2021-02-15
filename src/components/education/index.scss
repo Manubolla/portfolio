@@ -1,7 +1,7 @@
 .main-education-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 90%;
   @media screen and (max-width: 715px) {
@@ -9,8 +9,8 @@
   }
   .arrowRight {
     margin-right: 5rem;
+    text-align: -webkit-center;
     @media screen and (max-width: 715px) {
-      margin-right: 3rem;
       h3 {
         font-size: 12px;
       }
@@ -19,10 +19,12 @@
 }
 .education-container {
   margin-top: 3rem;
-  max-width: 768px;
-  max-height: 768px;
+  width: 768px;
+  height: 550px;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  place-items: center;
   @media screen and (max-width: 715px) {
     min-width: 300px;
     margin-left: 8rem;
@@ -54,8 +56,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     @media screen and (max-width: 715px) {
-      font-size: 12px;
-      padding: 1rem;
+      display: none;
     }
   }
   .table-row {
@@ -67,8 +68,18 @@
     transition: 0.2s all;
     transition: 0.2s all;
     text-align: center;
+    @media screen and (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .columna-1 {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
     @media screen and (max-width: 715px) {
-      font-size: 14px;
+      padding: 1rem;
     }
   }
   &:hover .table-row {
@@ -83,17 +94,22 @@
     opacity: 1;
     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
   }
-  .col-1 {
+  .columna-1 {
     flex-basis: 20%;
     font-weight: bold;
+    margin-right: 1rem;
   }
-  .col-2 {
+  .columna-2 {
     flex-basis: 20%;
+    margin-right: 1rem;
   }
-  .col-3 {
+  .columna-3 {
     flex-basis: 30%;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
   }
-  .col-4 {
+  .columna-4 {
     flex-basis: 50%;
+    margin-right: 1rem;
   }
 }

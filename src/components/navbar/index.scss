@@ -6,7 +6,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #111;
+  background-color: var(--color-primary);
   box-shadow: 1px 10px 13px -6px rgba(26, 28, 32, 0.82);
   -webkit-box-shadow: 1px 10px 13px -6px rgba(26, 28, 32, 0.82);
   -moz-box-shadow: 1px 10px 13px -6px rgba(26, 28, 32, 0.82);
@@ -17,7 +17,7 @@ li {
 }
 li a {
   display: block;
-  color: #f4f4f4;
+  color: var(--color-secondary);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -29,11 +29,11 @@ li a {
 }
 
 li a.active {
-  background-color: #f0a500;
-  color: #f4f4f4;
+  background-color: var(--color-third);
+  color: var(--color-secondary);
 }
 
 li a:hover {
-  background-color: #f4f4f4;
-  color: #f0a500;
+  background-color: var(--color-secondary);
+  color: var(--color-third);
 }

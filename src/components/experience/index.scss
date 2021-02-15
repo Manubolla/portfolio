@@ -1,92 +1,103 @@
 .main-experience-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  @media screen and (max-width: 715px) {
+    margin-top: 2rem;
+  }
+  .arrowLeft {
+    margin-left: 5rem;
+    text-align: -webkit-center;
+    @media screen and (max-width: 715px) {
+      margin-left: 2rem;
+      margin-top: 5.5rem;
+    }
+  }
+}
+.experience-container {
+  margin-top: 3rem;
+  max-width: 768px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  place-items: center;
+
+  @media screen and (max-width: 715px) {
+    min-width: 300px;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+  }
+}
+.experience-table {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  @media screen and (max-width: 715px) {
+    margin: 0;
+  }
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    @media screen and (max-width: 715px) {
+      padding: 0;
+      margin: 2px;
+    }
+  }
+  .table-header {
+    background-color: #f8dc81;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    font-weight: bold;
+    @media screen and (max-width: 715px) {
+      display:none;
+    }
+  }
+  .table-row {
+    background-color: #f8f1f1;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
     align-items: center;
-    width: 90%;
-    @media screen and (max-width: 715px) {
-      margin-top: 2rem;
-    }
-    .arrowLeft{
-        margin-left: 5rem;
-        text-align: -webkit-center;
-        @media screen and (max-width: 715px) {
-          margin-left: 2rem;
-          h3 {
-            font-size: 12px;
-          }
-        }
-    }
-  }
-  .experience-container {
-    margin-top: 3rem;
-    max-width: 768px;
-    max-height: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (max-width: 715px) {
-      min-width: 300px;
-      margin-left: 1rem;
-      margin-right: 1.5rem;
-    }
-  }
-  .experience-table {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    @media screen and (max-width: 715px) {
-      margin: 0;
-      
-    }
-    li {
-      border-radius: 3px;
-      padding: 25px 30px;
+    text-align: center;
+    @media screen and (max-width: 500px) {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 25px;
-      @media screen and (max-width: 715px) {
-        padding: 0;
-        margin: 2px;
-      }
-    }
-    .table-header {
-      background-color: #f8dc81;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      text-align: center;
-      font-weight: bold;
-      @media screen and (max-width: 715px) {
-        font-size: 12px;
-        padding: 1rem;
-      }
-    }
-    .table-row {
-      background-color: #f8f1f1;
-      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-      align-items: center;
-      text-align: center;
-      @media screen and (max-width: 715px) {
+      flex-direction: column;
+      .columna-1 {
+        font-weight: bold;
         font-size: 14px;
       }
     }
-    .table-row:hover{
-      background-color: #374045;
-      transition: 0.4s ease;
-      color: white;
-    }
-    .col-1 {
-      flex-basis: 20%;
-      font-weight: bold;
-    }
-    .col-2 {
-      flex-basis: 20%;
-    }
-    .col-3 {
-      flex-basis: 30%;
-    }
-    .col-4 {
-      flex-basis: 50%;
+    @media screen and (max-width: 715px) {
+      padding: 1rem;
     }
   }
-  
+  .table-row:hover {
+    background-color: #374045;
+    transition: 0.4s ease;
+    color: white;
+  }
+  .columna-1 {
+    flex-basis: 20%;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  .columna-2 {
+    flex-basis: 20%;
+    margin-right: 1rem;
+  }
+  .columna-3 {
+    flex-basis: 30%;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+  }
+  .columna-4 {
+    flex-basis: 50%;
+    margin-right: 1rem;
+  }
+}

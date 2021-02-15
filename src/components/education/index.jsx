@@ -19,19 +19,19 @@ const Education = (props) => {
       <div className="education-container">
           <ul className="education-table">
             <li className='table-header'>
-              <div className='col col-1'>School</div>
-              <div className='col col-2'>Degree</div>
-              <div className='col col-3'>Year</div>
-              <div className='col col-4'>Description</div>
+              <div className='columna columna-1'>School</div>
+              <div className='columna columna-2'>Degree</div>
+              <div className='columna columna-3'>Year</div>
+              <div className='columna columna-4'>Description</div>
             </li>
             {data &&
               data.map((item) => {
                 return (
                   <li className='table-row'>
-                    <div className='col col-1'>{item.school}</div>
-                    <div className='col col-2'>{item.degree}</div>
-                    <div className='col col-3'>{`${item.startYear} - ${item.endYear}`}</div>
-                    <div className='col col-4'>{item.description}</div>
+                    <div className='columna columna-1'>{item.school}</div>
+                    <div className='columna columna-2'>{item.degree}</div>
+                    <div className='columna columna-3'>{`${item.startYear} - ${item.endYear}`}</div>
+                    <div className='columna columna-4'>{item.description}</div>
                   </li>
                 );
               })}

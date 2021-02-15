@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/";
 import Education from "./components/education/";
 import Experience from "./components/experience/";
 import Contact from "./components/contact/";
+import CustomModal from "./components/modal/index.js";
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/education" component={Education}/>
           <Route exact path="/experience" component={Experience}/>
           <Route exact path="/contact" component={Contact}/>
+          <Route exact path='/prueba' component={CustomModal}/>
         </Switch>
       </AnimatePresence>
     </div>

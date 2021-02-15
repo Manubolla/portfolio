@@ -1,0 +1,19 @@
+.modal-footer{
+    display: flex;
+    justify-content: space-evenly;
+    i{
+        font-size: 2rem;
+        color: black;
+    }
+    i:hover{
+        color: grey;
+    }
+}
+.project-logo{
+    max-width: 450px;
+    max-height: 300px;
+    @media screen and (max-width: 1000px) {
+        width: 70%;
+        height: 70%;
+    }
+}

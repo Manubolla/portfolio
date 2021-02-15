@@ -1,53 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import "~bootstrap/scss/bootstrap";
 
-$baseColor: #398B93;
+$baseColor: #111;
+$secondaryColor: #f4f4f4;
+$thirdColor: #f0a500;
+
+
 :root {
   --color-primary: #{$baseColor};
+  --color-secondary: #{$secondaryColor};
+  --color-third: #{$thirdColor};
 }
 body {
-  background-color: #111;
+  background-color: var(--color-primary);
+}
+html{
+  font-size: 70%;
 }
 .app{
   min-height: 768px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }

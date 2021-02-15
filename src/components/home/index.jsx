@@ -57,6 +57,7 @@ const Home = (props) => {
       </div>
       <div className={styles.arrowContainer}>
       <h3 className={`${styles.animated} ${styles.bounce}`} style={{ color: "white", marginBottom: 30}}>Follow me!</h3>
+      <h3 /* className={`${styles.animated} ${styles.bounce}`} */ style={{ color: "white", marginBottom: 30}}>( you can use the keyboard )</h3>
         <Arrow points="down" to="projects" xY='y' coord={-500}/>
       </div>
     </motion.div>
