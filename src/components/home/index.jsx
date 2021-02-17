@@ -39,8 +39,7 @@ const Home = (props) => {
           <h3>Manuel Bolla Agrelo</h3>
           <h5>Full Stack developer</h5>
           <p className={`${styles.description}`}>
-            Which is worse, that everyone has his price, or that the price is
-            always so low.
+          "Challenges are what make life interesting. Overcoming them is what makes life meaningful"
           </p>
           <div className={styles.icons}>
           <a href="https://github.com/Manubolla" rel="noreferrer noopener" target="_blank">

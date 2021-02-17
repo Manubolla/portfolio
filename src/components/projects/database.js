@@ -5,8 +5,9 @@ export const projects = [
         description: 'First real project with a group of 7 members. We made a e-commerce of healthy products',
         socials: {
             github: "https://github.com/Manubolla/ecommerce-ft07-g12",
-            youtube: "",
-            deployedWeb: 'https://almazenhenry-51bf6.web.app/'
+            youtube: "https://youtu.be/D-XmhTpJno8",
+            deployedWeb: 'https://almazenhenry-51bf6.web.app/',
+            award: 'https://www.linkedin.com/feed/update/urn:li:activity:6763134127182028800/'
         },
         logo: 'https://i.ibb.co/8zRy23w/pexels-snapwire-349730.jpg'
     },
@@ -17,20 +18,22 @@ export const projects = [
         socials: {
             github: "https://github.com/Manubolla/PetBuddies",
             youtube: "",
-            deployedWeb: ''
+            deployedWeb: '',
+            award: ''
         },
         logo: 'https://i.ibb.co/17Q30j3/Pet-Buddies.jpg'
     },
     { 
         id: 3,
-        name: 'Pozo',
-        description: 'Game developed with react',
+        name: 'Memory Game',
+        description: 'Just fooling around with React, will add some features later.',
         socials: {
-            github: "",
+            github: "https://github.com/Manubolla/memory-game",
             youtube: "",
-            deployedWeb: ''
+            deployedWeb: 'https://memory-game-2a09c.web.app/',
+            award: '',
         },
-        logo: 'https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1484049536/content-items/001/822/416/logo_bueno-original.jpg?1484049536'
+        logo: 'https://i.ibb.co/42CG49K/memory-Game.png'
     },
     
 

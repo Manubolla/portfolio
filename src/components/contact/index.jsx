@@ -38,9 +38,9 @@ const Contact = (props) => {
       </div>
       <div>
         <form id="form" class="topBefore" onSubmit={sendEmail}>
-          <input id="name" type="text" name='name'placeholder="NAME" onChange={handleChange}/>
-          <input id="email" type="text" name='from_name' placeholder="E-MAIL" onChange={handleChange}/>
-          <textarea id="message" type="text" name='message' placeholder="MESSAGE" onChange={handleChange}></textarea>
+          <input id="name" type="text" name='name'placeholder="NAME" onChange={handleChange} required/>
+          <input id="email" type="email" name='from_name' placeholder="E-MAIL" onChange={handleChange} required/>
+          <textarea id="message" type="text" name='message' placeholder="MESSAGE" onChange={handleChange} required></textarea>
           <input id="submit" type="submit" value="Contact Manu!" />
         </form>
       </div>
