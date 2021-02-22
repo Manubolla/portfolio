@@ -21,16 +21,19 @@
   .content{
     display: grid;
     place-items: center;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
     .content-body {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      width: 90%;
+      width: 100%;
+      display: grid;
+      grid-template-columns:repeat(3, 1fr);
+      row-gap: 1rem;
+
       @media screen and (max-width: 715px) {
-        flex-direction: column;
-        height: 300px;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        margin: 0;
+        row-gap: 0;
     }
     .folder {
       margin: 0 10px 10px 0;

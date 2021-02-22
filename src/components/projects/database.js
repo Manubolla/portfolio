@@ -35,6 +35,31 @@ export const projects = [
         },
         logo: 'https://i.ibb.co/42CG49K/memory-Game.png'
     },
+    { 
+        id: 4,
+        name: 'Aerolab Challenge',
+        description: 'I challenge my self to complete the "Aerolab Challenge" in one day. This was the result.',
+        socials: {
+            github: "https://github.com/Manubolla/aerolab-challenge",
+            youtube: "",
+            deployedWeb: 'https://aerolab-challenge-c6cb0.web.app/',
+            award: '',
+        },
+        logo: 'https://i.ibb.co/gM545np/Sin-t-tulo.png'
+    },
+    { 
+        id: 5,
+        name: 'Paktolus Challenge',
+        description: 'Result of a interview Challenge',
+        socials: {
+            github: "https://github.com/Manubolla/online-casino",
+            youtube: "",
+            deployedWeb: 'https://onlinecasino-442ff.web.app/',
+            award: '',
+        },
+        logo: 'https://i.ibb.co/ZJdK9NL/onlinecasino.png'
+    },
+    
     
 
 ];
