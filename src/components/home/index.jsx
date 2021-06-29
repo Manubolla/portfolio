@@ -34,7 +34,7 @@ const Home = (props) => {
           <img
             className={styles.avatar}
             alt="profile"
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQFAo1Y4GOALbg/profile-displayphoto-shrink_200_200/0/1610467762713?e=1617235200&v=beta&t=vAGFLeXtZsx896h9u5-zoUAcDsVKtSSJAIrzosv_S4w"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGxEYM7CoKlWw/profile-displayphoto-shrink_800_800/0/1620048041409?e=1630540800&v=beta&t=dxZbq9yKPwX-iNDTnjkQhfbfDo9bEUPiFnKb6PCuEe4"
           />
           <h3>Manuel Bolla Agrelo</h3>
           <h5>Full Stack developer</h5>
