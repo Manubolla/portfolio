@@ -4,6 +4,7 @@ import styles from "./index.module.scss";
 import { motion } from "framer-motion";
 import { useKey } from "../customHooks/indxex";
 import {useHistory} from 'react-router-dom'
+import profile from '../../utils/profile.jfif';
 
 const Home = (props) => {
   const history = useHistory()
@@ -34,7 +35,7 @@ const Home = (props) => {
           <img
             className={styles.avatar}
             alt="profile"
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQGxEYM7CoKlWw/profile-displayphoto-shrink_800_800/0/1620048041409?e=1630540800&v=beta&t=dxZbq9yKPwX-iNDTnjkQhfbfDo9bEUPiFnKb6PCuEe4"
+            src={profile}
           />
           <h3>Manuel Bolla Agrelo</h3>
           <h5>Full Stack developer</h5>
