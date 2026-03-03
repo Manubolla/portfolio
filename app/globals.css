@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111111;
+  --background: #0d0d1a;
+  --foreground: #ffffff;
+  --purple: #a855f7;
+  --purple-dark: #7e22ce;
 }
 
 @theme inline {
@@ -11,8 +13,32 @@
   --font-sans: var(--font-geist);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Slow down snap scroll */
+@media (prefers-reduced-motion: no-preference) {
+  .snap-container {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist), Arial, sans-serif;
 }
+
+/* Subtle dot grid texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(168, 85, 247, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
