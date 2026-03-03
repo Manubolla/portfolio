@@ -5,6 +5,18 @@
   --foreground: #ffffff;
   --purple: #a855f7;
   --purple-dark: #7e22ce;
+
+  /* Type scale — edit these to resize all text at once */
+  --text-xs:   1rem;       /* footer, dates */
+  --text-sm:   1.125rem;   /* nav links, subtitles */
+  --text-base: 1.25rem;    /* body copy */
+  --text-lg:   1.5rem;     /* job titles */
+  --text-xl:   1.875rem;   /* role subtitle */
+  --text-2xl:  2.25rem;    /* section headings */
+  --text-3xl:  2.75rem;    /* greeting */
+  --text-4xl:  3.25rem;    /* hero name mobile */
+  --text-5xl:  4rem;       /* hero name md */
+  --text-6xl:  5rem;       /* hero name lg */
 }
 
 @theme inline {
@@ -17,13 +29,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Slow down snap scroll */
-@media (prefers-reduced-motion: no-preference) {
-  .snap-container {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
 body {
   background: var(--background);
