@@ -41,13 +41,14 @@ export default function Home() {
       >
         {/* Left: text */}
         <div className="flex-1">
-          <p className="font-light text-white text-2xl md:text-3xl lg:text-4xl">Hi There! 👋</p>
-          <h1 className="mt-3 font-bold text-white text-3xl md:text-5xl lg:text-6xl">
-            I&apos;m{" "}
+          <p className="text-base md:text-lg tracking-widest uppercase text-white font-semibold">
+            &ldquo;A goal without a plan is just a wish&rdquo;
+          </p>
+          <h1 className="mt-3 font-bold text-white text-2xl md:text-4xl lg:text-5xl">
             <span className="text-purple-400">Manuel Bolla Agrelo</span>
           </h1>
           <div className="mt-4 flex items-center justify-center gap-3 md:justify-start">
-            <p className="font-medium text-purple-300 text-lg md:text-xl lg:text-2xl">
+            <p className="font-medium text-purple-300 text-base md:text-lg lg:text-xl">
               React Native Developer
             </p>
             <span className="rounded-full bg-purple-600/20 border border-purple-500/40 px-3 py-1 text-sm font-semibold text-purple-300">
@@ -87,7 +88,7 @@ export default function Home() {
               transform: "scale(1.15)",
             }}
           />
-          <div className="overflow-hidden rounded-full mx-auto" style={{ width: "min(220px, 55vw)", height: "min(220px, 55vw)", boxShadow: "0 0 0 2px #a855f7" }}>
+          <div className="overflow-hidden rounded-full mx-auto" style={{ width: "min(320px, 72vw)", height: "min(320px, 72vw)", boxShadow: "0 0 0 2px #a855f7" }}>
             <Image
               src="/portfolio/profile.jpeg"
               alt="Manuel Bolla Agrelo"
@@ -191,6 +192,21 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="relative z-10 px-6 py-16 md:px-16 lg:px-28">
+        <div className="mx-auto max-w-3xl">
+          <div className="relative w-full overflow-hidden rounded-xl" style={{ paddingBottom: "56.25%", boxShadow: "0 0 0 1px rgba(168,85,247,0.3)" }}>
+            <iframe
+              src="https://www.youtube.com/embed/xevLOKA0mFQ"
+              title="Manuel Bolla Agrelo — Presentation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
           </div>
         </div>
       </section>
